@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="icon" type="image/svg+xml" href="unlock.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <title>Sam Dustin</title>
+</head>
+<body>
+<div id="particles-js"></div>
+    <div id="toptext">
+        <h1>Sam Dustin</h1>
+        <div id="typed-strings">
+        </div>
+        <span id="typed"></span>
+    </div>
+    <br/>
+        <div class="social">
+            <a class="links" title="GitHub" href="https://github.com/0x1CA3" target="_blank">
+                <i class="fa fa-github-alt icon-4x" aria-hidden="true"></i></a>
+            <a class="links" title="LinkedIn" href="https://linkedin.com/in/samueldustin" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="links" title="HackTheBox" href="https://www.hackthebox.eu/profile/37065" target="_blank">
+                <i class="fa fa-cube" aria-hidden="true"></i></a>
+            <a class="links" title="Medium" href="https://medium.com/@0x22b" target="_blank">
+                <i class="fa fa-medium" aria-hidden="true"></i></a>
+            <a class="links" title="Public Key" href="pubkey.txt" target="_blank">
+                <i class="fa fa-lock" aria-hidden="true"></i></a>
+        </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+        $('document').ready(function() {
+            var typed = new Typed('#typed', {
+                strings: ["Information Security Student", "Programmer", "Reverse Engineer", "Site Developer"],
+                stringElement: '#typed-strings',
+                typeSpeed: 30,
+                loop: true,
+                backDelay: 1500,
+                showCursor: true
+            })
+        });
+    </script>
+</body>
+</html>
